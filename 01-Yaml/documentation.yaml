@@ -13,13 +13,64 @@
 # A dictionary is represented in a simple key: value form (the colon must be followed by a space):
 
 # An employee record
-martin:
-  name: Martin D'vloper
-  job: Developer
-  skill: Elite
+- martin:
+    name: Martin D'vloper
+    job: Developer
+    skills:
+      - python
+      - perl
+      - pascal
+- tabitha:
+    name: Tabitha Bitumen
+    job: Developer
+    skills:
+      - lisp
+      - fortran
+      - erlang
 
 rashedin:
   designation: 'Full Stack Developer'
   company: 'Coursfy'
   jobType: 'Remote'
   location: 'Stockholm, Sweden'
+  skills:
+    - JavaScript
+    - HTML
+    - CSS
+    - React
+    - Node.js
+    - Express
+    - MongoDB
+    - MongoDB
+
+# Dictionaries and lists can also be represented in an abbreviated form if you really want to:
+
+# These are called “Flow collections”.
+
+---
+martin: {name: Martin D'vloper, job: Developer, skill: Elite}
+fruits: ['Apple', 'Orange', 'Strawberry', 'Mango']
+...
+
+# Ansible doesn’t really use these too much, but you can also specify a boolean value (true/false) in several forms:
+
+# Use lowercase ‘true’ or ‘false’ for boolean values in dictionaries if you want to be compatible with default yamllint options.
+
+create_key: true
+needs_agent: false
+knows_oop: True
+likes_emacs: TRUE
+uses_cvs: false
+
+
+# Values can span multiple lines using | or >. Spanning multiple lines using a “Literal Block Scalar” | will include the newlines and any trailing spaces. Using a “Folded Block Scalar” > will fold newlines to spaces; it is used to make what would otherwise be a very long line easier to read and edit. In either case the indentation will be ignored. Examples are:
+
+include_newlines: |
+            exactly as you see
+            will appear these three
+            lines of poetry
+
+fold_newlines: >
+            this is really a
+            single line of text
+            despite appearances
