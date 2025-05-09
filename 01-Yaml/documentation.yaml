@@ -74,3 +74,41 @@ fold_newlines: >
             this is really a
             single line of text
             despite appearances
+
+# Let’s combine what we learned so far in an arbitrary YAML example. This really has nothing to do with Ansible, but will give you a feel for the format:
+
+---
+# An employee record
+name: Rashedin Islam
+job: Developer
+skill: Elite
+employed: True
+foods:
+  - Apple
+  - Orange
+  - Strawberry
+  - Mango
+movies : ['Harry Potter', "Godfather", "Inception", "Shawshank Redemption", 'Forrest Gump']
+languages:
+  perl: Elite
+  python: Elite
+  pascal: Lame
+education: |
+  4 GCSEs
+  3 A-Levels
+  BSc in the Internet of Things
+Other:
+  hobby:
+    - Programming
+    - Reading
+    - Traveling
+  books:
+    - The Lord of the Rings
+    - The Hobbit
+    - The Silmarillion
+  favoritePlaces:
+    - Stockholm
+    - Gothenburg
+    - Goteborg
+...
+#
