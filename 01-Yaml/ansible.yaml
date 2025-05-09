@@ -1,0 +1,46 @@
+# let's write some yaml
+
+courses:
+  course_name: 'Yaml Tutorial'
+  version: 1.1.0
+  price: &my_price 18  # this is a variable
+  instructor: 'Rashedin Islam'
+  is_public: true
+  release_date: 2025-05-09 12:56:00
+  pre_enroll: null
+  tags: 
+    - yaml
+    - python
+    - openapi_specification
+  teachers: ['Hitesh Choudhary', 'Rashedin Islam']
+  teacher_details:
+    - name: "Hitesh Choudhary"
+      email: "h@co.com"
+      job: "Developer"
+      skills: 
+        - python
+        - perl
+        - pascal
+    - name: "Rashedin Islam"
+      email: "r@co.com"
+      job: "Developer"
+      skills:
+        - yaml
+        - ansible
+        - openapi_specification
+    - { name: "Tabitha Bitumen", email: "t@co.com", job: "Developer", skills: ["lisp", "fortran", "erlang"] }
+  short_desc: > 
+    here is a short
+    description for the course
+  long_desc: |
+    here is a long,
+    really a very very long and
+    detailed description for the course
+  process_payment: *my_price  # this is how to use a variable
+
+  adv: &adv    # this is how to store a variable
+    mykey: myval
+
+  another_adv: 
+    one: two
+    <<: *adv    # this is how to use a variable
