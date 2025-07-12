@@ -6,9 +6,9 @@
 
 
 | Name | Gender | Email | Phone |
-|----- | -----_ | ----- | ----- |
-|Rashedin | Male | r@gmail.com | +1 234 |
-|Sraboni | Female | S@gmail.com | +8 765 |
+|----- | ------ | ----- | ----- |
+| Rashedin | Male | r@gmail.com | +1 234 |
+| Sraboni | Female | S@gmail.com | +8 765 |
 
 
 ### Aligns text in columns using colons
