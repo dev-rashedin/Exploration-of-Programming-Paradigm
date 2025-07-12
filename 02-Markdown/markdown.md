@@ -38,5 +38,7 @@ const anyVar = 'codeBlock'
 console.log(anyVAr)
 ````
 
+> this is blockquote, This is a blockquote. One or two backticks (` or ``) create inline code, while triple backticks (```) or more (````) create a fenced code block.
+
 [^1]: This is the footnote.
 
