@@ -10,6 +10,6 @@
  -    => unordered list
  -    => unordered list
 
- ** This is bold text **
+ **This is bold text**
 
- * This is italic text * 
+*This is italic text* 
