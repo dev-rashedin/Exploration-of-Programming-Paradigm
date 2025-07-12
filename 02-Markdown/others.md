@@ -5,11 +5,14 @@
 - [x] Write the press release
 - [] Update the website
 - [] Contact the media
+  
+---
 
 ### Emoji
 
 That is so funny! :joy:
 
+---
 
 ### Highlight
 I need to highlight these ==very important words==.
@@ -33,6 +36,8 @@ x^2^
 <!-- ⚠️  Like subscript, superscript is not standard Markdown. You can use HTML: -->
 x<sup>2</sup> → x<sup>2</sup>
 ```
+
+---
 
 ### LaTeX equation	Formats text as a LaTeX equation	
 $$E = mc^2$$
